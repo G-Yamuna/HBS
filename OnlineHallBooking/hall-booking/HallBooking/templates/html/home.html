@@ -1,0 +1,49 @@
+{% extends 'html/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+{% load static %}
+
+<div class=" text-last " style="margin-bottom:0">
+	<h1>VENUE FOR YOU</h1>
+</div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+</ul>
+
+<!-- The slideshow -->
+<div class="container p-3 my-3 bg-info text-white">
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="{% static 'img/slide/img2.jpg' %}" class="mx-auto d-block" style="width:50%">
+</div>
+             <div class="carousel-item">
+             <img src="{% static 'img/slide/slide-1.jpg' %}" class="mx-auto d-block" style="width:50%">
+             </div>
+             <div class="carousel-item">
+              <img src="{% static 'img/slide/slide-2.jpg' %}" class="mx-auto d-block" style="width:50%">
+             </div>
+             <div class="carousel-item">
+              <img src="{% static 'img/slide/slide-3.jpg' %}" alt="" class="mx-auto d-block" style="width:50%">
+             </div>
+         </div>
+
+         <!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+         </a>
+     </div></div>
+<div>
+
+
+
+
+
+
+{% endblock %}

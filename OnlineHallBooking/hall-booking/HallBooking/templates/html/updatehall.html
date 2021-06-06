@@ -1,0 +1,22 @@
+{% extends 'html/base.html' %}
+{% block title %}Update Halls{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card mt-3 mx-auto col-md-6 shadow-lg">
+		<div class="card-body">
+			<h2>Update Halls</h2>
+			<form method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				<table class="table table-borderless">
+					{% for j in y %}
+					<tr>
+						<td>{{j}}</td>
+					</tr>
+					{% endfor %}
+				</table>
+				<input type="submit" value="Update" class="btn btn-success">
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
